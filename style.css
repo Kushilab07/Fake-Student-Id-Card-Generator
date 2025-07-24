@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* --- ID Card Styles --- */
+.id-card-holder {
+    background-color: #e9e9e9;
+    padding: 20px 15px 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.id-card-holder::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 12px;
+    background-color: #d0d0d0;
+    border-radius: 10px;
+}
+
+.id-card {
+    width: 320px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    padding: 15px 15px 0 15px;
+    text-align: center;
+}
+
+.branding-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.university-logo {
+    height: 50px;
+}
+
+.university-stylized-name {
+    height: 35px;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.university-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.color-gradient-bar {
+    height: 4px;
+    background: linear-gradient(to right, #d9066b, #843a9a);
+}
+
+.card-body {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.profile-photo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #eee;
+}
+
+.info-signature-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.student-details {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.student-details p, .card-footer p {
+    margin: 0;
+}
+
+.student-details strong, .card-footer strong {
+    color: #333;
+}
+
+.principal-signature {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.signature-image {
+    width: 100px;
+}
+
+.card-footer {
+    background-color: #000033;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* --- Controls Styles --- */
+.controls {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+.controls h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.controls input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.file-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.controls button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#updateButton {
+    background-color: #007bff; /* Blue */
+}
+
+#updateButton:hover {
+    background-color: #0056b3;
+}
+
+/* ADDED: Style for the new download button */
+#downloadButton {
+    background-color: #28a745; /* Green */
+    margin-top: 10px;
+}
+
+#downloadButton:hover {
+    background-color: #218838;
+}

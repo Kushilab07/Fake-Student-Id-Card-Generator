@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="id-card-holder">
+            <div class="id-card">
+                <header class="card-header">
+                    <div class="branding-line">
+                        <img id="logo" src="https://i.imgur.com/sd5OXnO.png" alt="University Logo" class="university-logo">
+                        <!-- <img id="stylizedName" src="https://i.imgur.com/k93J8bM.png" alt="Assam down town University" class="university-stylized-name"> -->
+                    </div>
+                    <hr class="separator">
+                    <h1 id="universityName" class="university-name">Assam Downtown University</h1>
+                    <div class="color-gradient-bar"></div>
+                </header>
+
+                <main class="card-body">
+                    <div class="profile-photo-container">
+                        <img id="profilePhoto" src="https://i.imgur.com/PuhP62X.png" alt="Student Photo" class="profile-photo">
+                    </div>
+                    <div class="info-signature-section">
+                        <div class="student-details">
+                            <p><strong>Name:</strong> <span id="studentName">Kushilab Deva Sarma</span></p>
+                            <p><strong>Class:</strong> <span id="studentClass">CSE</span></p>
+                            <p><strong>Roll:</strong> <span id="rollNumber">Adtu/1/2023-27/BTCS/029</span></p>
+                            <p><strong>Date of Birth:</strong> <span id="dob">2005-04-16</span></p>
+                            <p><strong>Year:</strong> <span id="year">2023</span></p>
+                        </div>
+                        <div class="principal-signature">
+                            <img id="signatureImage" src="https://a.storyblok.com/f/191576/1176x882/0707bde47c/make_signature_hero_after.webp" alt="Principal's Signature" class="signature-image">
+                            <p>Principal</p>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="card-footer">
+                    <p><strong>Address:</strong> <span id="address">Panikhaiti</span></p>
+                    <p><strong>Mobile:</strong> <span id="mobile">9864901928</span></p>
+                </footer>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h2>Edit Card Details</h2>
+            <div class="input-grid">
+                <input type="text" id="inputName" placeholder="Student Name">
+                <input type="text" id="inputClass" placeholder="Class (e.g., CSE)">
+                <input type="text" id="inputRoll" placeholder="Roll Number">
+                <input type="text" id="inputDob" placeholder="DOB (YYYY-MM-DD)">
+                <input type="text" id="inputYear" placeholder="Year">
+                <input type="text" id="inputAddress" placeholder="Address">
+                <input type="text" id="inputMobile" placeholder="Mobile Number">
+                <input type="text" id="inputUniversityName" placeholder="University Name">
+            </div>
+             <div class="file-inputs">
+                <label>Profile Photo: <input type="file" id="inputProfilePhoto" accept="image/*"></label>
+                <label>University Logo: <input type="file" id="inputLogo" accept="image/*"></label>
+            </div>
+            <button id="updateButton">Update Card</button>
+            <button id="downloadButton">⬇️ Download Card</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
